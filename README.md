@@ -13,8 +13,8 @@
 # Phương pháp
  ## 1.	Bộ lọc tiếng ho:
    Khi kiểm tra dữ liệu private_test có cùng phân phối với tập train hay không (tôi cho rằng các feature sau khi trích xuất sẽ nằm trong khoảng giá trị trung bình +/- 3 lần độ lệch chuẩn của tập train). Sau khi nghe bằng tai 57 file âm thanh có số lượng feature nằm ngoài phân phối >=173, tôi phát hiện ra nhiều âm thanh của tập private_test không phải là tiếng ho. Tôi nghĩ cần một bộ lọc tiếng ho trước khi trích xuất các fearture. Tôi thực hiện bằng cách:
-    -	Cắt bỏ khoảng lặng của âm thanh
-    -	Sử dụng học chuyển tiếp mô hình yamnet, loại bỏ với tiếng ho và tiếng nói ở ngưỡng phù hợp.
+-	Cắt bỏ khoảng lặng của âm thanh
+-	Sử dụng học chuyển tiếp mô hình yamnet, loại bỏ với tiếng ho và tiếng nói ở ngưỡng phù hợp.
 ## 2.	Trích xuất feature qua thư viện Librosa:
 ### 2.1.	Feature là chuỗi, mảng:
 -	Tôi trích xuất các feature là chuỗi, mảng như: mfcc (3 biến thể của mfcc), rms, centroid, rolloff, zero_croosing.
