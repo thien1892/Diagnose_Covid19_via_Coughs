@@ -48,8 +48,11 @@ Bước đầu tiên mà tôi nghĩ để cải thiện mô hình là xem xét l
 -	Tôi đã thử trích xuất âm thanh tiếng ho (gồm 1 tiếng ho, âm thanh lấy lại hơi cổ họng và 1 tiếng ho tiếp theo) nhưng không cho kết quả khả quan. Tôi nghe lai một vài âm thanh không thể trích xuất theo các này, thấy đa số những tiếng ho này không tự nhiên, không thấy âm thanh lấy lại hơi cổ họng. Liệu có thể yêu cầu người dùng cung cấp tiếng ho tự nhiên hay không? (trên thực tế, tôi khó có thể ho một cách tự nhiên nếu mình không bị ho thật sự).
 -	Tuổi tác và giới tính: Thực tế ta có thể yêu cầu người dùng cung cấp dữ liệu này mà ít có sai số (ta có thể dùng AI xác thực lại nếu cần). Ở phần warm-up, 2 feature này giúp tôi cải thiện mô hình thêm 2%-3%
 -	Các triệu chứng: Việc khai báo bệnh nền có ý nghĩa rất quan trọng trong chữa trị covid-19. Các triệu chứng thường gặp của covid-19 là cách thủ công hữu hiệu chúng ta đang kiểm tra người dân, nhưng thực tế có nhiều người nhiễm bệnh mà không có triệu chứng. Nếu thêm các triệu chứng mà những feature này chiếm phần quan trọng lớn, liệu có xảy ra sai lệch thiên vị hay không? Tôi chưa xây dựng mô hình theo hướng này nhưng là đây cách mà tôi có thể cải thiện mô hình.
--	Các mô hình của tôi đều có độ nhạy chưa cao (tỷ lệ người bị covid thật được dự đoán là dương tính)  cần thu thập thêm dữ liệu dương tính.
+-	Các mô hình của tôi đều có độ nhạy chưa cao (tỷ lệ người bị covid thật được dự đoán là dương tính) --> cần thu thập thêm dữ liệu dương tính.
 ### 3.2.	Mô hình
--	Do nguồn lực có hạn nên việc tinh chỉnh siêu tham số của tôi mang tính chủ quan nhiều  tiếp tục tinh chỉnh siêu tham số có thể cải thiện được mô hình.
--	Thường thì việc normalize và tăng cường dữ liệu đưa lại kết quả tốt hơn cho mô hình  tôi cần xem xét lại cách mình thực hiện và nên tiếp tục theo hướng nào để gia tăng hiệu quả.
+-	Do nguồn lực có hạn nên việc tinh chỉnh siêu tham số của tôi mang tính chủ quan nhiều --> tiếp tục tinh chỉnh siêu tham số có thể cải thiện được mô hình.
+-	Thường thì việc normalize và tăng cường dữ liệu đưa lại kết quả tốt hơn cho mô hình --> tôi cần xem xét lại cách mình thực hiện và nên tiếp tục theo hướng nào để gia tăng hiệu quả.
 
+# Tài liệu tham khảo
+1. Exploring Automatic Diagnosis of COVID-19 from Crowdsourced Respiratory Sound Data: [click here](https://arxiv.org/abs/2006.05919)
+2. Dữ liệu đã trích xuất: https://www.kaggle.com/thien1892/covid-732-na
