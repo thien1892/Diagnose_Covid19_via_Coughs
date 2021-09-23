@@ -12,7 +12,8 @@
 
 # Phương pháp
 
-<src img = 'https://i.imgur.com/JgfOy19.jpg'>
+<img src = 'https://i.imgur.com/JgfOy19.jpg'>
+
  ## 1.	Bộ lọc tiếng ho:
    Khi kiểm tra dữ liệu private_test có cùng phân phối với tập train hay không (tôi cho rằng các feature sau khi trích xuất sẽ nằm trong khoảng giá trị trung bình +/- 3 lần độ lệch chuẩn của tập train). Sau khi nghe bằng tai 57 file âm thanh có số lượng feature nằm ngoài phân phối >=173, tôi phát hiện ra nhiều âm thanh của tập private_test không phải là tiếng ho. Tôi nghĩ cần một bộ lọc tiếng ho trước khi trích xuất các fearture. Tôi thực hiện bằng cách:
 -	Cắt bỏ khoảng lặng của âm thanh
