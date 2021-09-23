@@ -53,6 +53,7 @@ Bước đầu tiên mà tôi nghĩ để cải thiện mô hình là xem xét l
 -	Do nguồn lực có hạn nên việc tinh chỉnh siêu tham số của tôi mang tính chủ quan nhiều --> tiếp tục tinh chỉnh siêu tham số có thể cải thiện được mô hình.
 -	Thường thì việc normalize và tăng cường dữ liệu đưa lại kết quả tốt hơn cho mô hình --> tôi cần xem xét lại cách mình thực hiện và nên tiếp tục theo hướng nào để gia tăng hiệu quả.
 
-# Tài liệu tham khảo
+# Tham khảo
 1. Exploring Automatic Diagnosis of COVID-19 from Crowdsourced Respiratory Sound Data: [click here](https://arxiv.org/abs/2006.05919)
 2. Dữ liệu đã trích xuất: https://www.kaggle.com/thien1892/covid-732-na
+3. Ví dụ dự đoán 1 file âm thanh: https://github.com/thien1892/Diagnose_Covid19_via_Coughs/blob/main/samples_notebook.ipynb
