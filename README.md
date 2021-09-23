@@ -56,4 +56,4 @@ Bước đầu tiên mà tôi nghĩ để cải thiện mô hình là xem xét l
 # Tham khảo
 1. Exploring Automatic Diagnosis of COVID-19 from Crowdsourced Respiratory Sound Data: [click here](https://arxiv.org/abs/2006.05919)
 2. Dữ liệu đã trích xuất: https://www.kaggle.com/thien1892/covid-732-na
-3. Ví dụ dự đoán 1 file âm thanh: https://github.com/thien1892/Diagnose_Covid19_via_Coughs/blob/main/samples_notebook.ipynb
+3. Ví dụ: https://colab.research.google.com/drive/1Uz5iTw9J5p_DMJffqpyrByp2YBVnhTjc?usp=sharing
