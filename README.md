@@ -29,3 +29,14 @@
 
 File âm thanh sau khi trích xuất feature sẽ được mã hóa thành 1 vecto 732 chiều (3 x13 x 11 + 4 x11 + 3+128 x 2). Tôi sử dụng Xgboost để dự đoán xác suất bị covid-19 của tiếng ho.
 
+# Đánh giá:
+## 1.	Kết quả và tốc độ xử lý:
+-	Tôi trích xuất các feature của file âm thanh của bộ dữ liệu train và private_test thành những file csv, và sử dụng google coblab để đào tạo mô hình.
+-	Về cách chia dữ liệu train và xác thực: Dữ liệu xác thực, tôi lấy 20% dữ liệu tiếng ho của giai đoạn 2; những dữ liệu còn lại tôi để vào tập train.
+-	Tôi sử dụng Xgboost và tập trung vào việc điều chỉnh các siêu tham số: max_depth, n_estimators, colsample_bytree và learning rate.
+-	Tôi xây dựng mô hình theo 3 hướng: 1) Sử dụng dữ liệu thường, 2) Sử dụng dữ liệu có tăng cường để tránh overfit bằng cách thêm tiếng ồn, tăng giảm cao độ, thay đổi cường độ và tốc độ. 3) Normalize âm thanh về [-1, 1] và tăng cường dữ liệu. Kết quả của các mô hình và thời gian train:
+<img src = 'https://i.imgur.com/3a7b96m.jpg'>
+
+## 2. Fearture quan trọng
+
+<img src = 'https://i.imgur.com/1tca6Gy.jpg'>
